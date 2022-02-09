@@ -5,17 +5,23 @@ import { Badge } from "@material-ui/core";
 
 const Container = styled.div`
   height: 60px;
-  /* background-color: lightgray; */
+  padding:10px;
+  width: 100%;
+  align-items:center;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
-  padding: 5px 20px;
+  padding: 0px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  top:0;
+  bottom:0;
+  margin: auto;
 `;
 
-const Language = styled.span`
+const Language = styled.div`
   cursor: pointer;
   font-size: 14px;
 `;
@@ -36,13 +42,13 @@ const Input = styled.input`
   border: none;
   border-radius: 80px
   align-items: center;
-  /* background-color: gray; */
 `;
 
 const Left = styled.div`
   flex: 1;
   align-items: center;
   display: flex;
+  justify-content: flex-front;
 `;
 
 const Logo = styled.h1 `
@@ -54,6 +60,7 @@ const Center = styled.div`
   flex: 1;
   align-items: center;
   text-align: center;
+  justify-content: center;
 `;
 
 const Right = styled.div`
@@ -64,12 +71,12 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div `
-  font-size: 14px;
+  font-size: 20px;
   align-items: center;
-  pointer: cursor;
+  cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
-`
+`;
 const Navbar = () => {
   return (
     <Container>
